@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>현재 상영 중 - 영화</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="logo">MOVIE<span>FLIX</span></h1>
+      <p class="tagline">현재 상영 중인 영화</p>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero-content">
+        <h2>지금 극장에서 만나보세요</h2>
+        <p>최신 개봉 영화를 한눈에</p>
+      </div>
+    </section>
+
+    <section class="movies-section">
+      <h2 class="section-title">현재 상영 중</h2>
+      <div id="movies-grid" class="movies-grid">
+        <!-- 영화 카드가 JavaScript로 채워짐 -->
+        <div class="loading" id="loading">
+          <div class="loader"></div>
+          <p>영화 목록을 불러오는 중...</p>
+        </div>
+      </div>
+      <p class="error-msg" id="error-msg" hidden></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>영화 정보 제공: The Movie Database (TMDB)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
